@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="稻喵 - 设计师 / 视频剪辑 / 翻唱 / 3D建模 / 游戏开发">
+  <meta name="keywords" content="稻喵,设计师,视频剪辑,翻唱,海报设计,3D建模,游戏设计">
+  <meta property="og:title" content="稻喵 | 个人作品集">
+  <meta property="og:description" content="新锐设计师 · 视频剪辑 · 3D建模 · 游戏开发 · 翻唱">
+  <meta property="og:type" content="website">
+  <title>稻喵 | 个人作品集</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="top-nav">
+    <div class="nav-logo">稻喵</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about" class="nav-link">关于</a>
+      <a href="#skills" class="nav-link">技能</a>
+      <a href="#portfolio" class="nav-link">作品</a>
+      <a href="#videos" class="nav-link">视频</a>
+      <a href="#awards" class="nav-link">荣誉</a>
+      <a href="#contact" class="nav-link">联系</a>
+    </nav>
+  </header>
+
+  <!-- 侧边圆点导航(桌面端) -->
+  <nav class="side-nav" aria-label="区块导航">
+    <a href="#hero" class="nav-dot active" data-section="hero" title="首页"><span>Hero</span></a>
+    <a href="#about" class="nav-dot" data-section="about" title="关于"><span>关于</span></a>
+    <a href="#skills" class="nav-dot" data-section="skills" title="技能"><span>技能</span></a>
+    <a href="#portfolio" class="nav-dot" data-section="portfolio" title="作品"><span>作品</span></a>
+    <a href="#videos" class="nav-dot" data-section="videos" title="视频"><span>视频</span></a>
+    <a href="#awards" class="nav-dot" data-section="awards" title="荣誉"><span>荣誉</span></a>
+    <a href="#contact" class="nav-dot" data-section="contact" title="联系"><span>联系</span></a>
+  </nav>
+
+  <!-- 鼠标光晕 -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============== Hero ============== -->
+  <section id="hero" class="hero">
+    <canvas id="particles" class="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <span class="hero-char">稻</span>
+        <span class="hero-char">喵</span>
+      </div>
+      <h1 class="hero-tagline">
+        <span class="hero-word">设计</span>
+        <span class="hero-dot">·</span>
+        <span class="hero-word">剪辑</span>
+        <span class="hero-dot">·</span>
+        <span class="hero-word">翻唱</span>
+        <span class="hero-dot">·</span>
+        <span class="hero-word">3D</span>
+      </h1>
+      <p class="hero-subtitle">在像素与音符之间，寻找属于自己的频率</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">查看作品</a>
+        <a href="#videos" class="btn btn-ghost">观看视频</a>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== About ============== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">关于<span class="text-gradient">稻喵</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-greeting">你好，我是 <span class="text-gradient">稻喵</span></p>
+          <p class="about-bio">
+            数字媒体技术专业应届生，专注平面/视觉传达设计。
+            熟练运用 Adobe Photoshop、Illustrator 进行海报与视觉设计，
+            熟练运用 Premiere Pro、剪映 进行视频剪辑与翻唱创作，
+            同时涉足 3D 建模与游戏设计领域。
+          </p>
+          <p class="about-bio">
+            喜欢把脑海里的画面变成可触可感的作品，相信设计与音乐一样，
+            是在表达自己，也是在寻找同频的人。
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">网名</span>
+              <span class="meta-value">稻喵</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">学校</span>
+              <span class="meta-value">大连东软信息学院</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">专业</span>
+              <span class="meta-value">数字媒体技术</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">GPA</span>
+              <span class="meta-value">3.47/4（专业前10%）</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">荣誉</span>
+              <span class="meta-value">辽宁省优秀毕业生</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-tags reveal">
+          <div class="tags-cloud">
+            <span class="tag tag-pink">旅行</span>
+            <span class="tag tag-blue">吉他</span>
+            <span class="tag tag-purple">动漫</span>
+            <span class="tag tag-cyan">翻唱</span>
+            <span class="tag tag-green">王者荣耀</span>
+            <span class="tag tag-orange">羽毛球</span>
+            <span class="tag tag-purple">视频剪辑</span>
+            <span class="tag tag-pink">海报设计</span>
+            <span class="tag tag-cyan">3D建模</span>
+            <span class="tag tag-blue">游戏设计</span>
+          </div>
+          <div class="about-quote">
+            <p>"在心里种花<br>人生才不会荒芜"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== Skills ============== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">技能<span class="text-gradient">矩阵</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-bento">
+        <div class="skill-card skill-card-large reveal" data-skill="90">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-name">平面 / 海报设计</h3>
+          <div class="skill-tools">
+            <span class="tool">Photoshop</span>
+            <span class="tool">Illustrator</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="90%"></div>
+          </div>
+          <p class="skill-desc">精通图像处理与合成，曾开设个人网店承接海报设计，锻炼专业技能与沟通能力。</p>
+        </div>
+
+        <div class="skill-card reveal" data-skill="85">
+          <div class="skill-icon">🎬</div>
+          <h3 class="skill-name">视频剪辑</h3>
+          <div class="skill-tools">
+            <span class="tool">Premiere Pro</span>
+            <span class="tool">剪映</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="85%"></div>
+          </div>
+          <p class="skill-desc">熟练运用，多次完成 AMV 混剪与翻唱剪辑创作。</p>
+        </div>
+
+        <div class="skill-card reveal" data-skill="75">
+          <div class="skill-icon">🧊</div>
+          <h3 class="skill-name">3D 建模</h3>
+          <div class="skill-tools">
+            <span class="tool">3DMax</span>
+            <span class="tool">Blender</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="75%"></div>
+          </div>
+          <p class="skill-desc">熟练硬表面模型制作，服务于 UI 与产品展示。</p>
+        </div>
+
+        <div class="skill-card skill-card-wide reveal" data-skill="70">
+          <div class="skill-icon">🎮</div>
+          <h3 class="skill-name">游戏设计 / 开发</h3>
+          <div class="skill-tools">
+            <span class="tool">Unity</span>
+            <span class="tool">Unreal Engine</span>
+            <span class="tool">C++</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar-fill" data-width="70%"></div>
+          </div>
+          <p class="skill-desc">参与学校多个实战项目开发，熟悉产品从 0 到 1 的开发全流程。</p>
+        </div>
+
+        <div class="skill-card skill-card-tall reveal">
+          <div class="skill-highlight">
+            <div class="highlight-num">500<sup>+</sup></div>
+            <div class="highlight-label">小时练习时长</div>
+          </div>
+          <p class="highlight-desc">从未停止对设计语言与剪辑节奏的打磨</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== Portfolio ============== -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">作品<span class="text-gradient">展示</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">精选 30+ 件 · 海报 · 建模 · 摄影 · 软件 · 插画 · 包装</p>
+      </div>
+
+      <!-- 分类标签 -->
+      <div class="portfolio-tabs reveal">
+        <button class="tab-btn active" data-category="all">全部</button>
+        <button class="tab-btn" data-category="poster">海报设计</button>
+        <button class="tab-btn" data-category="modeling">3D建模</button>
+        <button class="tab-btn" data-category="photo">摄影</button>
+        <button class="tab-btn" data-category="software">UI/软件</button>
+        <button class="tab-btn" data-category="illustration">插画手绘</button>
+        <button class="tab-btn" data-category="fanfic">二创设计</button>
+        <button class="tab-btn" data-category="packaging">包装</button>
+      </div>
+
+      <!-- 作品卡片网格 -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- 作品集目录 - 概览（封面因含隐私已剔除） -->
+        <article class="work-card work-card-wide reveal" data-category="all">
+          <div class="work-image">
+            <img src="assets/portfolio/works/contents.jpg" alt="作品集目录页" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">作品集目录</span>
+              <p class="work-desc">CONTENTS · 5 大类目</p>
+              <p class="work-meta">01 海报 / 02 建模 / 03 摄影 / 04 软件 / 05 更多</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 01 海报（3张） ==================== -->
+        <article class="work-card work-card-landscape reveal" data-category="poster">
+          <div class="work-image">
+            <img src="assets/portfolio/works/poster-dagger.jpg" alt="LOVE AND ETERNITY 婚纱海报" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">海报设计</span>
+              <p class="work-desc">LOVE AND ETERNITY · 简约优雅婚纱</p>
+              <p class="work-meta">手工撕边质感 · 纯白+自然色 · 温馨浪漫</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="poster">
+          <div class="work-image">
+            <img src="assets/portfolio/works/poster-mail.jpg" alt="任你邮向四面八方海报" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">海报设计</span>
+              <p class="work-desc">任你，邮向四面八方</p>
+              <p class="work-meta">橙蓝撞色 · 异形版式 · 邮筒意象</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/software-guzhi.jpg" alt="Next-Gen Dagger 匕首3D渲染" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">Next-Gen Dagger · 次世代匕首</p>
+              <p class="work-meta">科幻概念 · 金边黑底 · 锐利光影</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 02 建模（6张） ==================== -->
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/poster-wedding.jpg" alt="次世代步枪 + Neusoft 设备箱" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">次世代步枪 + Neusoft 设备箱</p>
+              <p class="work-meta">Sci-Fi 命题 · 金属反光 · 工业质感</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-rifle.jpg" alt="次世代步枪" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">次世代步枪 · Sci-Fi Assault Rifle</p>
+              <p class="work-meta">高模细节 · 材质贴图 · 暗调产品</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-rifle-case.jpg" alt="落日相拥 钢琴房" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">落日相拥 · 钢琴房一隅</p>
+              <p class="work-meta">场景氛围 · YAMAHA钢琴 · 暖光渲染</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-piano.jpg" alt="光亮 爱迪生灯泡" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">光亮 · 爱迪生灯泡</p>
+              <p class="work-meta">钨丝发光 · 透明玻璃 · 木纹背景</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-bulb.jpg" alt="Cake 纸杯蛋糕" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">Cake · 纸杯蛋糕</p>
+              <p class="work-meta">马卡龙配色 · 樱桃点缀 · 柔和材质</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-landmine.jpg" alt="Landmine 三角地雷" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">Landmine · 三角地雷概念</p>
+              <p class="work-meta">棱角几何 · 蓝橙撞色 · 科幻道具</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 03 摄影（3张） ==================== -->
+        <article class="work-card work-card-landscape reveal" data-category="photo">
+          <div class="work-image">
+            <img src="assets/portfolio/works/model-cupcakes.jpg" alt="浪漫春日 海鸥摄影" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">摄影</span>
+              <p class="work-desc">浪漫春日 · 海鸥与海</p>
+              <p class="work-meta">SPRING DAWN · 蓝色海湾</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="photo">
+          <div class="work-image">
+            <img src="assets/portfolio/works/photo-spring.jpg" alt="苏州园林 摄影" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">摄影</span>
+              <p class="work-desc">苏州园林 · 雪后古建</p>
+              <p class="work-meta">SUZHOU GARDENS · 飞檐墨瓦</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="photo">
+          <div class="work-image">
+            <img src="assets/portfolio/works/photo-suzhou.jpg" alt="Green Shade 林荫" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">摄影</span>
+              <p class="work-desc">Green Shade · 林荫大道</p>
+              <p class="work-meta">秋日午后 · 银杏金黄</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 04 软件（2张） ==================== -->
+        <article class="work-card work-card-portrait reveal" data-category="software">
+          <div class="work-image">
+            <img src="assets/portfolio/works/photo-greenshade.jpg" alt="故知 Bosom Friend App" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">UI/软件</span>
+              <p class="work-desc">故知 · Bosom Friend</p>
+              <p class="work-meta">团队作品 · 字体/边角/颜色 LOGO 制作</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-landscape reveal" data-category="modeling">
+          <div class="work-image">
+            <img src="assets/portfolio/works/software-diamond.jpg" alt="Diamond 钻石3D渲染" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">3D建模</span>
+              <p class="work-desc">Diamond · 钻石产品级渲染</p>
+              <p class="work-meta">深蓝冷调 · 折射高光 · 多角度排列</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 05 更多（1张） ==================== -->
+        <article class="work-card work-card-landscape reveal" data-category="illustration">
+          <div class="work-image">
+            <img src="assets/portfolio/works/illustration-genshin-3ui.jpg" alt="原神三角色手绘" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">插画手绘</span>
+              <p class="work-desc">原神三角色 · 胡桃/荒泷一斗/刻晴</p>
+              <p class="work-meta">国风底纹 · 金色描线 · 角色印记</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 包装设计（2张 横版） ==================== -->
+        <article class="work-card work-card-pack-3d reveal" data-category="packaging">
+          <div class="work-image">
+            <img src="assets/portfolio/packaging/yushifei-3d-mockup.jpg" alt="语诗菲柔肤按摩膏 3D立体呈现" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">包装设计</span>
+              <p class="work-desc">「语诗菲」柔肤按摩膏 · 立体呈现</p>
+              <p class="work-meta">80×80×80mm 立方包装 · 双罐组合展示</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-pack-flat reveal" data-category="packaging">
+          <div class="work-image">
+            <img src="assets/portfolio/packaging/yushifei-flat-layout.jpg" alt="语诗菲包装平面展开图" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">包装设计</span>
+              <p class="work-desc">「语诗菲」包装 · 平面展开图</p>
+              <p class="work-meta">六面结构 · 印刷规格完整</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 印谱系列（9张 剑来百剑仙印谱二创） ==================== -->
+        <article class="work-card work-card-wide reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/jianlai.jpg" alt="百剑仙印谱系列 - 剑来" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">个人二创</span>
+              <p class="work-desc">百剑仙印谱 · 系列作品（9幅）</p>
+              <p class="work-meta">剑来小说 · 封印式书法设计 · 印谱意象重构</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/jiankai-tuoyueshan.jpg" alt="剑开托月山" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">剑开托月山</p>
+              <p class="work-meta">飞剑破空 · 意气风发</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/jianxian-shaonian.jpg" alt="剑仙也曾少年。剑仙也曾少女。" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">剑仙也曾少年 · 剑仙也曾少女</p>
+              <p class="work-meta">少年意气 · 红印呼应</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/kangkai-ranhou.jpg" alt="慷慨去也。浩然归也。" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">慷慨去也 · 浩然归也</p>
+              <p class="work-meta">双印对望 · 黑白互文</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/situ-jiyu.jpg" alt="司徒积玉" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">司徒积玉</p>
+              <p class="work-meta">繁体古意 · 长款白文印</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/xingying-buli.jpg" alt="形影不离。两心相照。" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">形影不离 · 两心相照</p>
+              <p class="work-meta">对角呼应 · 阴阳对章</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/yuan-xiansheng.jpg" alt="愿先生心境四季如春" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">愿先生心境四季如春</p>
+              <p class="work-meta">行草逸趣 · 朱印点睛</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/zhibuzu.jpg" alt="知不足" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">知不足</p>
+              <p class="work-meta">大字榜书 · 单印肃穆</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="fanfic">
+          <div class="work-image">
+            <img src="assets/portfolio/yinpu/huoguo-jiu.jpg" alt="火锅就酒，天下我有" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">百剑仙印谱</span>
+              <p class="work-desc">火锅就酒 · 天下我有</p>
+              <p class="work-meta">豪放行书 · 闲章点缀</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== 24节气海报（3张 竖版） ==================== -->
+        <article class="work-card work-card-tall reveal" data-category="poster">
+          <div class="work-image">
+            <img src="assets/portfolio/jieqi/yushui.jpg" alt="雨水节气海报" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">二十四节气</span>
+              <p class="work-desc">雨水 · 2026年2月18日</p>
+              <p class="work-meta">"且将烦恼付东流，笑看人间"</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-tall reveal" data-category="poster">
+          <div class="work-image">
+            <img src="assets/portfolio/jieqi/dashu.jpg" alt="大暑节气海报" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">二十四节气</span>
+              <p class="work-desc">大暑 · 2026年7月23日</p>
+              <p class="work-meta">"山林不向四季起誓，枯萎随缘"</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card work-card-tall reveal" data-category="poster">
+          <div class="work-image">
+            <img src="assets/portfolio/jieqi/qingming.jpg" alt="清明节气海报" loading="lazy">
+            <div class="work-overlay">
+              <span class="work-tag">二十四节气</span>
+              <p class="work-desc">清明 · 2026年4月5日</p>
+              <p class="work-meta">"花好月圆人长寿，称心如意"</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 项目经验 - 山海学语 -->
+        <article class="work-card work-card-wide reveal" data-category="project">
+          <div class="project-card">
+            <div class="project-info">
+              <span class="work-tag">项目经验</span>
+              <h3>山海学语 · 学前教育软件</h3>
+              <p class="project-role">UI 设计 + 3D 模型设计</p>
+              <p class="project-desc">
+                基于 Unity 引擎参与设计与开发，针对幼儿用户特点设计符合认知习惯的 UI 界面，
+                注重视觉引导与交互体验结合。过程中涵盖用户体验分析、3D 模型制作、模型效果评估，
+                并将优化后的模型有效应用于最终产品。
+              </p>
+              <ul class="project-duties">
+                <li>负责界面整体风格制定，结合儿童用户特点设计色彩明快 UI 主题</li>
+                <li>绘制界面原型图和高保真界面图，协助开发人员实现功能</li>
+                <li>持续优化按钮布局、引导动效等细节，提高交互体验</li>
+                <li>使用 Blender / 3DMax 完成项目所需基础3D模型设计</li>
+              </ul>
+            </div>
+            <div class="project-visual">
+              <div class="project-mockup">
+                <div class="mockup-screen">
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-content">
+                    <div class="mockup-icon"></div>
+                    <div class="mockup-icon"></div>
+                    <div class="mockup-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== Videos ============== -->
+  <section id="videos" class="section videos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">视频<span class="text-gradient">作品</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">翻唱 · 混剪 · AMV</p>
+      </div>
+
+      <!-- 平台Tab -->
+      <div class="video-platforms reveal">
+        <button class="platform-btn active" data-platform="cover">🎤 翻唱系列 <span class="platform-count">4</span></button>
+        <button class="platform-btn" data-platform="edit">🎬 剪辑混剪 <span class="platform-count">4</span></button>
+        <button class="platform-btn" data-platform="douyin">📱 抖音平台 <span class="platform-count">3</span></button>
+      </div>
+
+      <!-- 翻唱 -->
+      <div class="video-list active" data-platform="cover">
+        <div class="video-grid">
+
+          <div class="video-card reveal" data-bvid="BV1st3T64EPM">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 反乌托邦</h4>
+              <p class="video-meta">
+                <span class="video-author">@渲云白</span>
+                <span class="video-date">2025-07-25</span>
+              </p>
+              <p class="video-quote">翻唱作品 · 个人演绎</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV1t6EM6XEJS">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 望春风</h4>
+              <p class="video-meta">
+                <span class="video-author">@渲云白</span>
+                <span class="video-date">2025-06-08</span>
+              </p>
+              <p class="video-quote">翻唱作品 · 个人演绎</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV148NK6yE79">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 爱情公寓</h4>
+              <p class="video-meta">
+                <span class="video-author">@渲云白</span>
+                <span class="video-date">2025-07-12</span>
+              </p>
+              <p class="video-quote">翻唱作品 · 个人演绎</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV1WJV46HEQb">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 稻香</h4>
+              <p class="video-meta">
+                <span class="video-author">@渲云白</span>
+                <span class="video-date">2025-05-29</span>
+              </p>
+              <p class="video-quote">翻唱作品 · 个人演绎</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 剪辑 -->
+      <div class="video-list" data-platform="edit">
+        <div class="video-grid">
+
+          <div class="video-card reveal" data-bvid="BV19h411q7NV">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站 · 小号 · 原神</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">【原神/高然混剪】love is gone</h4>
+              <p class="video-meta"><span class="video-author">@渲云白 · 小号</span></p>
+              <p class="video-quote">原神角色高燃向混剪</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV1DW411Y7yx">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站 · 代表作</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">为了你我愿与世界为敌</h4>
+              <p class="video-meta"><span class="video-author">@渲云白</span></p>
+              <p class="video-quote">AMV 剪辑代表作品</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV15W411n7wp">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">【AMV】为珂朵莉打上花火</h4>
+              <p class="video-meta"><span class="video-author">@渲云白</span></p>
+              <p class="video-quote">动漫剪辑 · 催泪向</p>
+            </div>
+          </div>
+
+          <div class="video-card reveal" data-bvid="BV16s411H7hy">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-bilibili">B站</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">一花依世界</h4>
+              <p class="video-meta"><span class="video-author">@渲云白</span></p>
+              <p class="video-quote">催泪 / 唯美 系列剪辑</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 抖音平台 -->
+      <div class="video-list" data-platform="douyin">
+        <div class="douyin-profile reveal">
+          <div class="douyin-avatar">
+            <span class="douyin-avatar-emoji">🐱</span>
+          </div>
+          <div class="douyin-info">
+            <h3 class="douyin-name">稻喵</h3>
+            <p class="douyin-id">抖音号：38925581026</p>
+            <p class="douyin-sign">「山林从不问四季起誓，枯萎随缘」</p>
+            <div class="douyin-stats">
+              <div class="stat-item">
+                <span class="stat-num">50</span>
+                <span class="stat-label">作品</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">44</span>
+                <span class="stat-label">粉丝</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">771</span>
+                <span class="stat-label">获赞</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.douyin.com/user/self?from_tab_name=main"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-douyin">
+            <span>前往抖音主页</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <p class="douyin-section-title">精选翻唱作品</p>
+        <div class="video-grid">
+
+          <a class="video-card video-card-link reveal"
+             href="https://www.douyin.com/user/self?from_tab_name=main&modal_id=7665700839097855144&showSubTab=video&showTab=post"
+             target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-douyin">抖音 · 561赞</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 反乌托邦 Pt.2 & Montagem</h4>
+              <p class="video-meta">
+                <span class="video-author">@稻喵</span>
+                <span class="video-date">5天前</span>
+              </p>
+              <p class="video-quote">翻唱混剪 · 高燃踩点</p>
+            </div>
+          </a>
+
+          <a class="video-card video-card-link reveal"
+             href="https://www.douyin.com/user/self?from_tab_name=main&modal_id=7663750900808280820"
+             target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-douyin">抖音 · 583赞</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 甲乙丙丁（抒情版）</h4>
+              <p class="video-meta">
+                <span class="video-author">@稻喵</span>
+                <span class="video-date">6天前</span>
+              </p>
+              <p class="video-quote">抒情翻唱 · 一人一首一首</p>
+            </div>
+          </a>
+
+          <a class="video-card video-card-link reveal"
+             href="https://www.douyin.com/user/self?from_tab_name=main&modal_id=7665016351325875816"
+             target="_blank" rel="noopener noreferrer">
+            <div class="video-thumb">
+              <div class="video-placeholder" aria-hidden="true">
+                <div class="play-btn">▶</div>
+                <span class="video-platform-tag tag-douyin">抖音 · 583赞</span>
+              </div>
+            </div>
+            <div class="video-info">
+              <h4 class="video-title">稻喵 - 甲乙丙丁（你我怎么两清）</h4>
+              <p class="video-meta">
+                <span class="video-author">@稻喵</span>
+                <span class="video-date">5天前</span>
+              </p>
+              <p class="video-quote">一人一首一首</p>
+            </div>
+          </a>
+
+        </div>
+        <p class="douyin-hint">抖音视频不支持网页嵌入 · 点击卡片跳转至原视频观看</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== Awards ============== -->
+  <section id="awards" class="section awards">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">荣誉<span class="text-gradient">奖项</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3>辽宁省优秀毕业生</h3>
+            <span class="timeline-level">省级 · 荣誉</span>
+            <p>在数字媒体技术专业的综合表现获得认可</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>国青杯 全国高校艺术设计作品大赛</h3>
+            <span class="timeline-level level-national">国家级 · 一等奖</span>
+            <p>视觉传达设计类 全国一等奖</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>国青杯 全国高校艺术设计作品大赛</h3>
+            <span class="timeline-level level-national">国家级 · 二等奖</span>
+            <p>视觉传达设计类 全国二等奖</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3>辽宁省普通高等学校大学生移动应用开发大赛</h3>
+            <span class="timeline-level level-province">省级 · 三等奖</span>
+            <p>移动应用开发方向</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>国青杯 全国高校艺术设计作品大赛</h3>
+            <span class="timeline-level level-national">国家级 · 二等奖</span>
+            <p>视觉传达设计类 全国二等奖</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== Contact ============== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">联系<span class="text-gradient">我</span></h2>
+        <div class="section-line"></div>
+        <p class="section-desc">欢迎合作与交流 · 视频请通过平台私信</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="https://space.bilibili.com/114351744" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+          <div class="contact-icon icon-bilibili">B</div>
+          <div class="contact-info">
+            <h3>B站 (主号)</h3>
+            <p>@渲云白</p>
+            <span class="contact-arrow">→</span>
+          </div>
+        </a>
+
+        <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+          <div class="contact-icon icon-douyin">D</div>
+          <div class="contact-info">
+            <h3>抖音</h3>
+            <p>个人主页</p>
+            <span class="contact-arrow">→</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-signature">
+        <div class="sig-logo">稻喵</div>
+        <p>Designed & Crafted by 稻喵 · <span class="text-gradient">© 2026</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 图片查看器 -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox-close" aria-label="关闭">×</button>
+    <img class="lightbox-img" id="lightboxImg" alt="查看大图">
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/cursor-glow.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
